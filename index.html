@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-4">
+        <h1>STORY_STYLE</h1>
+        <div class="d-flex">
+            <input type="text" id="search-bar" class="form-control me-2" placeholder="Buscar productos...">
+            <button class="btn btn-outline-success">Buscar</button>
+            <div id="cart-summary" class="ms-4">
+                <a href="#cart-section" id="cart-icon" class="btn btn-warning">
+                    Carrito (0) 
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mt-4">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="image-slider">
+                            <button class="btn btn-light left-arrow">&#10094;</button>
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/22dc7ada-c3a44ee442a7105c9917158991863553-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/0e830a7d-fe4feef1962db7bcbc17158991854293-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid" style="display:none;">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/f7cd8c41-602dd6131bf2e561e617158991863886-640-0.webp" class="product-image" alt="Camiseta Visita Real Madrid" style="display: none;">
+                            <button class="btn btn-light right-arrow">&#10095;</button>
+                        </div>
+                        <h5 class="card-title mt-2">Camiseta local del Real Madrid 24/25</h5>
+                        <p class="card-price mt-2">Precio: $60</p>
+                        <p class="card-description mt-2">
+                            La camiseta local del Real Madrid 24/25 es perfecta para los fanáticos que buscan comodidad y estilo en cada partido. 
+                        </p>
+                        <button class="btn btn-link show-more-btn">Mostrar más</button>
+                        <p class="card-text">Elige tu talla:</p>
+                        <select class="form-select select-talla" aria-label="Seleccionar talla">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <a href="#" class="btn btn-success add-to-cart mt-3" data-product="Camiseta Local Real Madrid" data-price="60">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Aquí puedes añadir más productos -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="image-slider">
+                            <button class="btn btn-light left-arrow">&#10094;</button>
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/22dc7ada-c3a44ee442a7105c9917158991863553-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/0e830a7d-fe4feef1962db7bcbc17158991854293-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid" style="display:none;">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/f7cd8c41-602dd6131bf2e561e617158991863886-640-0.webp" class="product-image" alt="Camiseta Visita Real Madrid" style="display: none;">
+                            <button class="btn btn-light right-arrow">&#10095;</button>
+                        </div>
+                        <h5 class="card-title mt-2">Camiseta local del Real Madrid 24/25</h5>
+                        <p class="card-price mt-2">Precio: $60</p>
+                        <p class="card-description mt-2">
+                            La camiseta local del Real Madrid 24/25 es perfecta para los fanáticos que buscan comodidad y estilo en cada partido. 
+                        </p>
+                        <button class="btn btn-link show-more-btn">Mostrar más</button>
+                        <p class="card-text">Elige tu talla:</p>
+                        <select class="form-select select-talla" aria-label="Seleccionar talla">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <a href="#" class="btn btn-success add-to-cart mt-3" data-product="Camiseta Local Real Madrid" data-price="60">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="image-slider">
+                            <button class="btn btn-light left-arrow">&#10094;</button>
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/22dc7ada-c3a44ee442a7105c9917158991863553-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/0e830a7d-fe4feef1962db7bcbc17158991854293-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid" style="display:none;">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/f7cd8c41-602dd6131bf2e561e617158991863886-640-0.webp" class="product-image" alt="Camiseta Visita Real Madrid" style="display: none;">
+                            <button class="btn btn-light right-arrow">&#10095;</button>
+                        </div>
+                        <h5 class="card-title mt-2">Camiseta local del Real Madrid 24/25</h5>
+                        <p class="card-price mt-2">Precio: $60</p>
+                        <p class="card-description mt-2">
+                            La camiseta local del Real Madrid 24/25 es perfecta para los fanáticos que buscan comodidad y estilo en cada partido. 
+                        </p>
+                        <button class="btn btn-link show-more-btn">Mostrar más</button>
+                        <p class="card-text">Elige tu talla:</p>
+                        <select class="form-select select-talla" aria-label="Seleccionar talla">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <a href="#" class="btn btn-success add-to-cart mt-3" data-product="Camiseta Local Real Madrid" data-price="60">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="image-slider">
+                            <button class="btn btn-light left-arrow">&#10094;</button>
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/22dc7ada-c3a44ee442a7105c9917158991863553-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/0e830a7d-fe4feef1962db7bcbc17158991854293-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid" style="display:none;">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/f7cd8c41-602dd6131bf2e561e617158991863886-640-0.webp" class="product-image" alt="Camiseta Visita Real Madrid" style="display: none;">
+                            <button class="btn btn-light right-arrow">&#10095;</button>
+                        </div>
+                        <h5 class="card-title mt-2">Camiseta local del Real Madrid 24/25</h5>
+                        <p class="card-price mt-2">Precio: $60</p>
+                        <p class="card-description mt-2">
+                            La camiseta local del Real Madrid 24/25 es perfecta para los fanáticos que buscan comodidad y estilo en cada partido. 
+                        </p>
+                        <button class="btn btn-link show-more-btn">Mostrar más</button>
+                        <p class="card-text">Elige tu talla:</p>
+                        <select class="form-select select-talla" aria-label="Seleccionar talla">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <a href="#" class="btn btn-success add-to-cart mt-3" data-product="Camiseta Local Real Madrid" data-price="60">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="image-slider">
+                            <button class="btn btn-light left-arrow">&#10094;</button>
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/22dc7ada-c3a44ee442a7105c9917158991863553-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/0e830a7d-fe4feef1962db7bcbc17158991854293-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid" style="display:none;">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/f7cd8c41-602dd6131bf2e561e617158991863886-640-0.webp" class="product-image" alt="Camiseta Visita Real Madrid" style="display: none;">
+                            <button class="btn btn-light right-arrow">&#10095;</button>
+                        </div>
+                        <h5 class="card-title mt-2">Camiseta local del Real Madrid 24/25</h5>
+                        <p class="card-price mt-2">Precio: $60</p>
+                        <p class="card-description mt-2">
+                            La camiseta local del Real Madrid 24/25 es perfecta para los fanáticos que buscan comodidad y estilo en cada partido. 
+                        </p>
+                        <button class="btn btn-link show-more-btn">Mostrar más</button>
+                        <p class="card-text">Elige tu talla:</p>
+                        <select class="form-select select-talla" aria-label="Seleccionar talla">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <a href="#" class="btn btn-success add-to-cart mt-3" data-product="Camiseta Local Real Madrid" data-price="60">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="image-slider">
+                            <button class="btn btn-light left-arrow">&#10094;</button>
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/22dc7ada-c3a44ee442a7105c9917158991863553-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/0e830a7d-fe4feef1962db7bcbc17158991854293-640-0.webp" class="product-image" alt="Camiseta Local Real Madrid" style="display:none;">
+                            <img src="https://acdn.mitiendanube.com/stores/004/358/419/products/f7cd8c41-602dd6131bf2e561e617158991863886-640-0.webp" class="product-image" alt="Camiseta Visita Real Madrid" style="display: none;">
+                            <button class="btn btn-light right-arrow">&#10095;</button>
+                        </div>
+                        <h5 class="card-title mt-2">Camiseta local del Real Madrid 24/25</h5>
+                        <p class="card-price mt-2">Precio: $60</p>
+                        <p class="card-description mt-2">
+                            La camiseta local del Real Madrid 24/25 es perfecta para los fanáticos que buscan comodidad y estilo en cada partido. 
+                        </p>
+                        <button class="btn btn-link show-more-btn">Mostrar más</button>
+                        <p class="card-text">Elige tu talla:</p>
+                        <select class="form-select select-talla" aria-label="Seleccionar talla">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <a href="#" class="btn btn-success add-to-cart mt-3" data-product="Camiseta Local Real Madrid" data-price="60">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <section class="container mt-5" id="cart-section">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-items">
+            <!-- Aquí se mostrarán los productos añadidos -->
+        </ul>
+        <a href="#" id="finalize-purchase" class="btn btn-primary">Finalizar Compra</a>
+        <button class="btn btn-danger" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <footer class="text-center mt-5 p-4" id="contact">
+        <h4>Contáctanos</h4>
+        <p>Teléfono: 921-838-549</p>
+        <p>Email: contacto@story_style.com</p>
+    </footer>
+
+    <!-- Modal para detalles del producto -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modal-product-image" src="" alt="" class="img-fluid">
+                    <h5 id="modal-product-title"></h5>
+                    <p id="modal-product-description"></p>
+                    <p id="modal-product-price"></p>
+                    <p>Elige tu talla:</p>
+                    <select id="modal-select-talla" class="form-select" aria-label="Seleccionar talla">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-success add-to-cart-modal" data-product="" data-price="">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

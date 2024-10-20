@@ -1,0 +1,127 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #5aa2a3;
+    color: white;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#search-bar {
+    width: 250px;
+}
+
+.card {
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-slider {
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    height: 300px; /* Tamaño para PC */
+    object-fit: cover; /* Para mantener proporciones */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .product-image {
+        height: 200px; /* Tamaño más pequeño en móviles */
+    }
+
+    /* Puedes ajustar el tamaño de la tarjeta si es necesario */
+    .card {
+        margin: 10px; /* Espacio reducido entre tarjetas */
+    }
+}
+
+.left-arrow,
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-price {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #5aa2a3;
+    border: none;
+}
+
+#cart-summary {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#cart-items {
+    list-style-type: none;
+}
+
+#cart-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #5aa2a3;
+    color: white;
+}
+
+footer h4, footer p {
+    margin: 0;
+}
+
+#cart-icon {
+    cursor: pointer;
+}
+
+.card-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Muestra solo 2 líneas */
+    -webkit-box-orient: vertical;
+    max-height: 50px; /* Ajuste de altura para 2 líneas */
+    transition: max-height 0.3s ease-in-out;
+}
+
+.card-description.expanded {
+    -webkit-line-clamp: unset; /* Quita la limitación de líneas */
+    max-height: 500px; /* Aumenta la altura máxima para que se muestre el contenido completo */
+}
+
+.show-more-btn {
+    margin-top: 10px;
+    color: #5aa2a3;
+}
